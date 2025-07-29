@@ -1,0 +1,1245 @@
+<!-- Content wrapper -->
+<div class="content-wrapper">
+  <!-- Content -->
+  <div class="container-xxl flex-grow-1 container-p-y">
+    <!-- Product List Table -->
+    <div class="card">
+      <div class="card-header border-bottom">
+        <h5 class="card-title">Filter</h5>
+        <div class="d-flex justify-content-between align-items-center row">
+          <div class="col-md-4 product_status mb-md-0 mb-3">
+            <select id="ProductStatus" class="form-select text-capitalize">
+              <option value="">Status</option>
+              <option value="Scheduled">Scheduled</option>
+              <option value="Publish">Publish</option>
+              <option value="Inactive">Inactive</option>
+            </select>
+          </div>
+          <div class="col-md-4 product_category mb-md-0 mb-3">
+            <select id="ProductCategory" class="form-select text-capitalize">
+              <option value="">Category</option>
+              <option value="Household">Household</option>
+              <option value="Office">Office</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Shoes">Shoes</option>
+              <option value="Accessories">Accessories</option>
+              <option value="Game">Game</option>
+            </select>
+          </div>
+          <div class="col-md-4 product_stock mb-md-0 mb-3">
+            <select id="ProductStock" class="form-select text-capitalize">
+              <option value="">Stock</option>
+              <option value="Out_of_Stock">Out_of_Stock</option>
+              <option value="In_Stock">In_Stock</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-datatable">
+        <div
+          id="DataTables_Table_0_wrapper"
+          class="dt-container dt-bootstrap5 dt-empty-footer"
+        >
+          <div class="row m-3 my-0 justify-content-between py-3">
+            <div
+              class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto mb-md-0 mb-3 mt-0"
+            >
+              <div class="mb-0">
+                <input
+                  type="search"
+                  class="form-control ms-0"
+                  id="dt-search-0"
+                  placeholder="Search Product"
+                  aria-controls="DataTables_Table_0"
+                />
+              </div>
+            </div>
+            <div
+              class="d-md-flex align-items-center dt-layout-end col-md-auto ms-auto justify-content-md-between justify-content-center d-flex flex-wrap gap-2"
+            >
+              <div class="mb-0">
+                <select
+                  name="DataTables_Table_0_length"
+                  aria-controls="DataTables_Table_0"
+                  class="form-select"
+                  id="dt-length-0"
+                >
+                  <option value="10">10</option>
+                  <option value="25">25</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+              </div>
+              <div class="dt-buttons btn-group flex-wrap">
+                <div class="">
+                  <button
+                    class="btn buttons-collection btn-label-secondary dropdown-toggle me-2"
+                    tabindex="0"
+                    aria-controls="DataTables_Table_0"
+                    type="button"
+                    aria-haspopup="dialog"
+                    aria-expanded="false"
+                  >
+                    <span
+                      ><span class="d-flex align-items-center gap-2"
+                        ><i class="icon-base bx bx-export icon-xs"></i>
+                        <span class="d-none d-sm-inline-block"
+                          >Export</span
+                        ></span
+                      ></span
+                    >
+                  </button>
+                </div>
+                <div>
+                  <a
+                    href="add-product.html"
+                    class="btn add-new btn-primary"
+                    tabindex="0"
+                    aria-controls="DataTables_Table_0"
+                    type="button"
+                  >
+                    <span
+                      ><i class="icon-base bx bx-plus me-0 me-sm-1 icon-xs"></i
+                      ><span class="d-none d-sm-inline-block"
+                        >Add Product</span
+                      ></span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="justify-content-between dt-layout-table">
+            <div
+              class="d-md-flex justify-content-between align-items-center dt-layout-full table-responsive"
+            >
+              <table class="datatables-products table">
+                <thead class="border-top">
+                  <tr>
+                    <th
+                      data-dt-column="1"
+                      rowspan="1"
+                      colspan="1"
+                      class="dt-select"
+                      aria-label=""
+                    >
+                      <span class="dt-column-title"></span
+                      ><span class="dt-column-order"></span
+                      ><input
+                        class="form-check-input"
+                        type="checkbox"
+                        aria-label="Select all rows"
+                      />
+                    </th>
+                    <th>product</th>
+                    <th>category</th>
+                    <th>stock</th>
+                    <th>sku</th>
+                    <th>price</th>
+                    <th>qty</th>
+                    <th>status</th>
+                    <th>actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="dt-select">
+                      <input
+                        aria-label="Select row"
+                        class="form-check-input"
+                        type="checkbox"
+                      />
+                    </td>
+                    <td class="sorting_1">
+                      <div
+                        class="d-flex justify-content-start align-items-center product-name"
+                      >
+                        <div class="avatar-wrapper">
+                          <div
+                            class="avatar avatar me-2 me-sm-4 rounded-2 bg-label-secondary"
+                          >
+                            <img
+                              src="./assets/img/ecommerce-images/product-9.png"
+                              alt="Product-9"
+                              class="rounded"
+                            />
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h6 class="text-nowrap mb-0">Air Jordan</h6>
+                          <small class="text-truncate d-none d-sm-block"
+                            >Air Jordan is a line of basketball shoes produced
+                            by Nike</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span
+                        class="text-truncate d-flex align-items-center text-heading"
+                      >
+                        <span
+                          class="w-px-30 h-px-30 rounded-circle d-flex justify-content-center align-items-center bg-label-success me-4"
+                        >
+                          <i class="icon-base bx bx-walk icon-18px"></i> </span
+                        >Shoes
+                      </span>
+                    </td>
+                    <td>
+                      <span class="text-truncate">
+                        <label class="switch switch-primary switch-sm">
+                          <input
+                            type="checkbox"
+                            class="switch-input"
+                            id="switch"
+                          />
+                          <span class="switch-toggle-slider">
+                            <span class="switch-off"></span>
+                          </span>
+                        </label>
+                        <span class="d-none">Out_of_Stock</span>
+                      </span>
+                    </td>
+                    <td class="dt-type-numeric">
+                      <span>31063</span>
+                    </td>
+                    <td class="dt-type-numeric dtr-hidden">
+                      <span>$125</span>
+                    </td>
+                    <td class="dt-type-numeric"><span>942</span></td>
+                    <td class="dtr-hidden">
+                      <span class="badge bg-label-danger" text-capitalized=""
+                        >Inactive</span
+                      >
+                    </td>
+                    <td class="dtr-hidden">
+                      <div class="d-inline-block text-nowrap">
+                        <button class="btn btn-icon">
+                          <i class="icon-base bx bx-edit icon-md"></i>
+                        </button>
+                        <button
+                          class="btn btn-icon dropdown-toggle hide-arrow"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i
+                            class="icon-base bx bx-dots-vertical-rounded icon-md"
+                          ></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end m-0">
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >View</a
+                          >
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >Suspend</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="dt-select">
+                      <input
+                        aria-label="Select row"
+                        class="form-check-input"
+                        type="checkbox"
+                      />
+                    </td>
+                    <td class="sorting_1">
+                      <div
+                        class="d-flex justify-content-start align-items-center product-name"
+                      >
+                        <div class="avatar-wrapper">
+                          <div
+                            class="avatar avatar me-2 me-sm-4 rounded-2 bg-label-secondary"
+                          >
+                            <img
+                              src="./assets/img/ecommerce-images/product-13.png"
+                              alt="Product-13"
+                              class="rounded"
+                            />
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h6 class="text-nowrap mb-0">Amazon Fire TV</h6>
+                          <small class="text-truncate d-none d-sm-block"
+                            >4K UHD smart TV, stream live TV without
+                            cable</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span
+                        class="text-truncate d-flex align-items-center text-heading"
+                      >
+                        <span
+                          class="w-px-30 h-px-30 rounded-circle d-flex justify-content-center align-items-center bg-label-danger me-4"
+                        >
+                          <i
+                            class="icon-base bx bx-headphone icon-18px"
+                          ></i> </span
+                        >Electronics
+                      </span>
+                    </td>
+                    <td>
+                      <span class="text-truncate">
+                        <label class="switch switch-primary switch-sm">
+                          <input
+                            type="checkbox"
+                            class="switch-input"
+                            id="switch"
+                          />
+                          <span class="switch-toggle-slider">
+                            <span class="switch-off"></span>
+                          </span>
+                        </label>
+                        <span class="d-none">Out_of_Stock</span>
+                      </span>
+                    </td>
+                    <td class="dt-type-numeric"><span>5829</span></td>
+                    <td class="dt-type-numeric dtr-hidden">
+                      <span>$263.49</span>
+                    </td>
+                    <td class="dt-type-numeric"><span>587</span></td>
+                    <td class="dtr-hidden">
+                      <span class="badge bg-label-warning" text-capitalized=""
+                        >Scheduled</span
+                      >
+                    </td>
+                    <td class="dtr-hidden">
+                      <div class="d-inline-block text-nowrap">
+                        <button class="btn btn-icon">
+                          <i class="icon-base bx bx-edit icon-md"></i>
+                        </button>
+                        <button
+                          class="btn btn-icon dropdown-toggle hide-arrow"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i
+                            class="icon-base bx bx-dots-vertical-rounded icon-md"
+                          ></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end m-0">
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >View</a
+                          >
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >Suspend</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="dt-select">
+                      <input
+                        aria-label="Select row"
+                        class="form-check-input"
+                        type="checkbox"
+                      />
+                    </td>
+                    <td class="sorting_1">
+                      <div
+                        class="d-flex justify-content-start align-items-center product-name"
+                      >
+                        <div class="avatar-wrapper">
+                          <div
+                            class="avatar avatar me-2 me-sm-4 rounded-2 bg-label-secondary"
+                          >
+                            <img
+                              src="./assets/img/ecommerce-images/product-15.png"
+                              alt="Product-15"
+                              class="rounded"
+                            />
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h6 class="text-nowrap mb-0">Apple iPad</h6>
+                          <small class="text-truncate d-none d-sm-block"
+                            >10.2-inch Retina Display, 64GB</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span
+                        class="text-truncate d-flex align-items-center text-heading"
+                      >
+                        <span
+                          class="w-px-30 h-px-30 rounded-circle d-flex justify-content-center align-items-center bg-label-danger me-4"
+                        >
+                          <i
+                            class="icon-base bx bx-headphone icon-18px"
+                          ></i> </span
+                        >Electronics
+                      </span>
+                    </td>
+                    <td>
+                      <span class="text-truncate">
+                        <label class="switch switch-primary switch-sm">
+                          <input
+                            type="checkbox"
+                            class="switch-input"
+                            checked=""
+                          />
+                          <span class="switch-toggle-slider">
+                            <span class="switch-on"></span>
+                          </span>
+                        </label>
+                        <span class="d-none">In_Stock</span>
+                      </span>
+                    </td>
+                    <td class="dt-type-numeric">
+                      <span>35946</span>
+                    </td>
+                    <td class="dt-type-numeric dtr-hidden">
+                      <span>$248.39</span>
+                    </td>
+                    <td class="dt-type-numeric"><span>468</span></td>
+                    <td class="dtr-hidden">
+                      <span class="badge bg-label-success" text-capitalized=""
+                        >Publish</span
+                      >
+                    </td>
+                    <td class="dtr-hidden">
+                      <div class="d-inline-block text-nowrap">
+                        <button class="btn btn-icon">
+                          <i class="icon-base bx bx-edit icon-md"></i>
+                        </button>
+                        <button
+                          class="btn btn-icon dropdown-toggle hide-arrow"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i
+                            class="icon-base bx bx-dots-vertical-rounded icon-md"
+                          ></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end m-0">
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >View</a
+                          >
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >Suspend</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="dt-select">
+                      <input
+                        aria-label="Select row"
+                        class="form-check-input"
+                        type="checkbox"
+                      />
+                    </td>
+                    <td class="sorting_1">
+                      <div
+                        class="d-flex justify-content-start align-items-center product-name"
+                      >
+                        <div class="avatar-wrapper">
+                          <div
+                            class="avatar avatar me-2 me-sm-4 rounded-2 bg-label-secondary"
+                          >
+                            <img
+                              src="./assets/img/ecommerce-images/product-5.png"
+                              alt="Product-5"
+                              class="rounded"
+                            />
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h6 class="text-nowrap mb-0">Apple Watch Series 7</h6>
+                          <small class="text-truncate d-none d-sm-block"
+                            >Starlight Aluminum Case with Starlight Sport
+                            Band.</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span
+                        class="text-truncate d-flex align-items-center text-heading"
+                      >
+                        <span
+                          class="w-px-30 h-px-30 rounded-circle d-flex justify-content-center align-items-center bg-label-secondary me-4"
+                        >
+                          <i
+                            class="icon-base bx bxs-watch icon-18px"
+                          ></i> </span
+                        >Accessories
+                      </span>
+                    </td>
+                    <td>
+                      <span class="text-truncate">
+                        <label class="switch switch-primary switch-sm">
+                          <input
+                            type="checkbox"
+                            class="switch-input"
+                            id="switch"
+                          />
+                          <span class="switch-toggle-slider">
+                            <span class="switch-off"></span>
+                          </span>
+                        </label>
+                        <span class="d-none">Out_of_Stock</span>
+                      </span>
+                    </td>
+                    <td class="dt-type-numeric">
+                      <span>46658</span>
+                    </td>
+                    <td class="dt-type-numeric dtr-hidden">
+                      <span>$799</span>
+                    </td>
+                    <td class="dt-type-numeric"><span>851</span></td>
+                    <td class="dtr-hidden">
+                      <span class="badge bg-label-warning" text-capitalized=""
+                        >Scheduled</span
+                      >
+                    </td>
+                    <td class="dtr-hidden">
+                      <div class="d-inline-block text-nowrap">
+                        <button class="btn btn-icon">
+                          <i class="icon-base bx bx-edit icon-md"></i>
+                        </button>
+                        <button
+                          class="btn btn-icon dropdown-toggle hide-arrow"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i
+                            class="icon-base bx bx-dots-vertical-rounded icon-md"
+                          ></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end m-0">
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >View</a
+                          >
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >Suspend</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="dt-select">
+                      <input
+                        aria-label="Select row"
+                        class="form-check-input"
+                        type="checkbox"
+                      />
+                    </td>
+                    <td class="sorting_1">
+                      <div
+                        class="d-flex justify-content-start align-items-center product-name"
+                      >
+                        <div class="avatar-wrapper">
+                          <div
+                            class="avatar avatar me-2 me-sm-4 rounded-2 bg-label-secondary"
+                          >
+                            <img
+                              src="./assets/img/ecommerce-images/product-16.png"
+                              alt="Product-16"
+                              class="rounded"
+                            />
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h6 class="text-nowrap mb-0">
+                            BANGE Anti Theft Backpack
+                          </h6>
+                          <small class="text-truncate d-none d-sm-block"
+                            >Smart Business Laptop Fits 15.6 Inch
+                            Notebook</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span
+                        class="text-truncate d-flex align-items-center text-heading"
+                      >
+                        <span
+                          class="w-px-30 h-px-30 rounded-circle d-flex justify-content-center align-items-center bg-label-secondary me-4"
+                        >
+                          <i
+                            class="icon-base bx bxs-watch icon-18px"
+                          ></i> </span
+                        >Accessories
+                      </span>
+                    </td>
+                    <td>
+                      <span class="text-truncate">
+                        <label class="switch switch-primary switch-sm">
+                          <input
+                            type="checkbox"
+                            class="switch-input"
+                            checked=""
+                          />
+                          <span class="switch-toggle-slider">
+                            <span class="switch-on"></span>
+                          </span>
+                        </label>
+                        <span class="d-none">In_Stock</span>
+                      </span>
+                    </td>
+                    <td class="dt-type-numeric">
+                      <span>41867</span>
+                    </td>
+                    <td class="dt-type-numeric dtr-hidden">
+                      <span>$79.99</span>
+                    </td>
+                    <td class="dt-type-numeric"><span>519</span></td>
+                    <td class="dtr-hidden">
+                      <span class="badge bg-label-danger" text-capitalized=""
+                        >Inactive</span
+                      >
+                    </td>
+                    <td class="dtr-hidden">
+                      <div class="d-inline-block text-nowrap">
+                        <button class="btn btn-icon">
+                          <i class="icon-base bx bx-edit icon-md"></i>
+                        </button>
+                        <button
+                          class="btn btn-icon dropdown-toggle hide-arrow"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i
+                            class="icon-base bx bx-dots-vertical-rounded icon-md"
+                          ></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end m-0">
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >View</a
+                          >
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >Suspend</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="dt-select">
+                      <input
+                        aria-label="Select row"
+                        class="form-check-input"
+                        type="checkbox"
+                      />
+                    </td>
+                    <td class="sorting_1">
+                      <div
+                        class="d-flex justify-content-start align-items-center product-name"
+                      >
+                        <div class="avatar-wrapper">
+                          <div
+                            class="avatar avatar me-2 me-sm-4 rounded-2 bg-label-secondary"
+                          >
+                            <img
+                              src="./assets/img/ecommerce-images/product-18.png"
+                              alt="Product-18"
+                              class="rounded"
+                            />
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h6 class="text-nowrap mb-0">Canon EOS Rebel T7</h6>
+                          <small class="text-truncate d-none d-sm-block"
+                            >18-55mm Lens | Built-in Wi-Fi | 24.1 MP CMOS
+                            Sensor</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span
+                        class="text-truncate d-flex align-items-center text-heading"
+                      >
+                        <span
+                          class="w-px-30 h-px-30 rounded-circle d-flex justify-content-center align-items-center bg-label-danger me-4"
+                        >
+                          <i
+                            class="icon-base bx bx-headphone icon-18px"
+                          ></i> </span
+                        >Electronics
+                      </span>
+                    </td>
+                    <td>
+                      <span class="text-truncate">
+                        <label class="switch switch-primary switch-sm">
+                          <input
+                            type="checkbox"
+                            class="switch-input"
+                            checked=""
+                          />
+                          <span class="switch-toggle-slider">
+                            <span class="switch-on"></span>
+                          </span>
+                        </label>
+                        <span class="d-none">In_Stock</span>
+                      </span>
+                    </td>
+                    <td class="dt-type-numeric">
+                      <span>63474</span>
+                    </td>
+                    <td class="dt-type-numeric dtr-hidden">
+                      <span>$399</span>
+                    </td>
+                    <td class="dt-type-numeric"><span>810</span></td>
+                    <td class="dtr-hidden">
+                      <span class="badge bg-label-warning" text-capitalized=""
+                        >Scheduled</span
+                      >
+                    </td>
+                    <td class="dtr-hidden">
+                      <div class="d-inline-block text-nowrap">
+                        <button class="btn btn-icon">
+                          <i class="icon-base bx bx-edit icon-md"></i>
+                        </button>
+                        <button
+                          class="btn btn-icon dropdown-toggle hide-arrow"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i
+                            class="icon-base bx bx-dots-vertical-rounded icon-md"
+                          ></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end m-0">
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >View</a
+                          >
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >Suspend</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="dt-select">
+                      <input
+                        aria-label="Select row"
+                        class="form-check-input"
+                        type="checkbox"
+                      />
+                    </td>
+                    <td class="sorting_1">
+                      <div
+                        class="d-flex justify-content-start align-items-center product-name"
+                      >
+                        <div class="avatar-wrapper">
+                          <div
+                            class="avatar avatar me-2 me-sm-4 rounded-2 bg-label-secondary"
+                          >
+                            <img
+                              src="./assets/img/ecommerce-images/product-3.png"
+                              alt="Product-3"
+                              class="rounded"
+                            />
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h6 class="text-nowrap mb-0">Dohioue Wall Clock</h6>
+                          <small class="text-truncate d-none d-sm-block"
+                            >Modern 10 Inch Battery Operated Wall Clocks</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span
+                        class="text-truncate d-flex align-items-center text-heading"
+                      >
+                        <span
+                          class="w-px-30 h-px-30 rounded-circle d-flex justify-content-center align-items-center bg-label-warning me-4"
+                        >
+                          <i
+                            class="icon-base bx bx-briefcase icon-18px"
+                          ></i> </span
+                        >Household
+                      </span>
+                    </td>
+                    <td>
+                      <span class="text-truncate">
+                        <label class="switch switch-primary switch-sm">
+                          <input
+                            type="checkbox"
+                            class="switch-input"
+                            id="switch"
+                          />
+                          <span class="switch-toggle-slider">
+                            <span class="switch-off"></span>
+                          </span>
+                        </label>
+                        <span class="d-none">Out_of_Stock</span>
+                      </span>
+                    </td>
+                    <td class="dt-type-numeric">
+                      <span>29540</span>
+                    </td>
+                    <td class="dt-type-numeric dtr-hidden">
+                      <span>$16.34</span>
+                    </td>
+                    <td class="dt-type-numeric"><span>804</span></td>
+                    <td class="dtr-hidden">
+                      <span class="badge bg-label-success" text-capitalized=""
+                        >Publish</span
+                      >
+                    </td>
+                    <td class="dtr-hidden">
+                      <div class="d-inline-block text-nowrap">
+                        <button class="btn btn-icon">
+                          <i class="icon-base bx bx-edit icon-md"></i>
+                        </button>
+                        <button
+                          class="btn btn-icon dropdown-toggle hide-arrow"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i
+                            class="icon-base bx bx-dots-vertical-rounded icon-md"
+                          ></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end m-0">
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >View</a
+                          >
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >Suspend</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="dt-select">
+                      <input
+                        aria-label="Select row"
+                        class="form-check-input"
+                        type="checkbox"
+                      />
+                    </td>
+                    <td class="sorting_1">
+                      <div
+                        class="d-flex justify-content-start align-items-center product-name"
+                      >
+                        <div class="avatar-wrapper">
+                          <div
+                            class="avatar avatar me-2 me-sm-4 rounded-2 bg-label-secondary"
+                          >
+                            <img
+                              src="./assets/img/ecommerce-images/product-2.png"
+                              alt="Product-2"
+                              class="rounded"
+                            />
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h6 class="text-nowrap mb-0">Echo Dot (4th Gen)</h6>
+                          <small class="text-truncate d-none d-sm-block"
+                            >Echo Dot Smart speaker with Alexa</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span
+                        class="text-truncate d-flex align-items-center text-heading"
+                      >
+                        <span
+                          class="w-px-30 h-px-30 rounded-circle d-flex justify-content-center align-items-center bg-label-danger me-4"
+                        >
+                          <i
+                            class="icon-base bx bx-headphone icon-18px"
+                          ></i> </span
+                        >Electronics
+                      </span>
+                    </td>
+                    <td>
+                      <span class="text-truncate">
+                        <label class="switch switch-primary switch-sm">
+                          <input
+                            type="checkbox"
+                            class="switch-input"
+                            id="switch"
+                          />
+                          <span class="switch-toggle-slider">
+                            <span class="switch-off"></span>
+                          </span>
+                        </label>
+                        <span class="d-none">Out_of_Stock</span>
+                      </span>
+                    </td>
+                    <td class="dt-type-numeric">
+                      <span>72836</span>
+                    </td>
+                    <td class="dt-type-numeric dtr-hidden">
+                      <span>$25.50</span>
+                    </td>
+                    <td class="dt-type-numeric"><span>827</span></td>
+                    <td class="dtr-hidden">
+                      <span class="badge bg-label-success" text-capitalized=""
+                        >Publish</span
+                      >
+                    </td>
+                    <td class="dtr-hidden">
+                      <div class="d-inline-block text-nowrap">
+                        <button class="btn btn-icon">
+                          <i class="icon-base bx bx-edit icon-md"></i>
+                        </button>
+                        <button
+                          class="btn btn-icon dropdown-toggle hide-arrow"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i
+                            class="icon-base bx bx-dots-vertical-rounded icon-md"
+                          ></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end m-0">
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >View</a
+                          >
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >Suspend</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="dt-select">
+                      <input
+                        aria-label="Select row"
+                        class="form-check-input"
+                        type="checkbox"
+                      />
+                    </td>
+                    <td class="sorting_1">
+                      <div
+                        class="d-flex justify-content-start align-items-center product-name"
+                      >
+                        <div class="avatar-wrapper">
+                          <div
+                            class="avatar avatar me-2 me-sm-4 rounded-2 bg-label-secondary"
+                          >
+                            <img
+                              src="./assets/img/ecommerce-images/product-19.png"
+                              alt="Product-19"
+                              class="rounded"
+                            />
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h6 class="text-nowrap mb-0">Honiway Wall Mirror</h6>
+                          <small class="text-truncate d-none d-sm-block"
+                            >Decorative 12 inch Rustic Wood Mirror Sunburst
+                            Boho</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span
+                        class="text-truncate d-flex align-items-center text-heading"
+                      >
+                        <span
+                          class="w-px-30 h-px-30 rounded-circle d-flex justify-content-center align-items-center bg-label-info me-4"
+                        >
+                          <i
+                            class="icon-base bx bx-home-smile icon-18px"
+                          ></i> </span
+                        >Office
+                      </span>
+                    </td>
+                    <td>
+                      <span class="text-truncate">
+                        <label class="switch switch-primary switch-sm">
+                          <input
+                            type="checkbox"
+                            class="switch-input"
+                            id="switch"
+                          />
+                          <span class="switch-toggle-slider">
+                            <span class="switch-off"></span>
+                          </span>
+                        </label>
+                        <span class="d-none">Out_of_Stock</span>
+                      </span>
+                    </td>
+                    <td class="dt-type-numeric">
+                      <span>15859</span>
+                    </td>
+                    <td class="dt-type-numeric dtr-hidden">
+                      <span>$23.99</span>
+                    </td>
+                    <td class="dt-type-numeric"><span>735</span></td>
+                    <td class="dtr-hidden">
+                      <span class="badge bg-label-danger" text-capitalized=""
+                        >Inactive</span
+                      >
+                    </td>
+                    <td class="dtr-hidden">
+                      <div class="d-inline-block text-nowrap">
+                        <button class="btn btn-icon">
+                          <i class="icon-base bx bx-edit icon-md"></i>
+                        </button>
+                        <button
+                          class="btn btn-icon dropdown-toggle hide-arrow"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i
+                            class="icon-base bx bx-dots-vertical-rounded icon-md"
+                          ></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end m-0">
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >View</a
+                          >
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >Suspend</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="dt-select">
+                      <input
+                        aria-label="Select row"
+                        class="form-check-input"
+                        type="checkbox"
+                      />
+                    </td>
+                    <td class="sorting_1">
+                      <div
+                        class="d-flex justify-content-start align-items-center product-name"
+                      >
+                        <div class="avatar-wrapper">
+                          <div
+                            class="avatar avatar me-2 me-sm-4 rounded-2 bg-label-secondary"
+                          >
+                            <img
+                              src="./assets/img/ecommerce-images/product-4.png"
+                              alt="Product-4"
+                              class="rounded"
+                            />
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h6 class="text-nowrap mb-0">INZCOU Running Shoes</h6>
+                          <small class="text-truncate d-none d-sm-block"
+                            >Lightweight Tennis Shoes Non Slip Gym Workout
+                            Shoes</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span
+                        class="text-truncate d-flex align-items-center text-heading"
+                      >
+                        <span
+                          class="w-px-30 h-px-30 rounded-circle d-flex justify-content-center align-items-center bg-label-success me-4"
+                        >
+                          <i class="icon-base bx bx-walk icon-18px"></i> </span
+                        >Shoes
+                      </span>
+                    </td>
+                    <td>
+                      <span class="text-truncate">
+                        <label class="switch switch-primary switch-sm">
+                          <input
+                            type="checkbox"
+                            class="switch-input"
+                            id="switch"
+                          />
+                          <span class="switch-toggle-slider">
+                            <span class="switch-off"></span>
+                          </span>
+                        </label>
+                        <span class="d-none">Out_of_Stock</span>
+                      </span>
+                    </td>
+                    <td class="dt-type-numeric">
+                      <span>49402</span>
+                    </td>
+                    <td class="dt-type-numeric dtr-hidden">
+                      <span>$36.98</span>
+                    </td>
+                    <td class="dt-type-numeric"><span>528</span></td>
+                    <td class="dtr-hidden">
+                      <span class="badge bg-label-warning" text-capitalized=""
+                        >Scheduled</span
+                      >
+                    </td>
+                    <td class="dtr-hidden">
+                      <div class="d-inline-block text-nowrap">
+                        <button class="btn btn-icon">
+                          <i class="icon-base bx bx-edit icon-md"></i>
+                        </button>
+                        <button
+                          class="btn btn-icon dropdown-toggle hide-arrow"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i
+                            class="icon-base bx bx-dots-vertical-rounded icon-md"
+                          ></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end m-0">
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >View</a
+                          >
+                          <a href="javascript:void(0);" class="dropdown-item"
+                            >Suspend</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row mx-3 justify-content-between py-3">
+            <div
+              class="d-md-flex justify-content-between text-md-left text-center align-items-center dt-layout-start col-md-auto me-auto mb-md-0 mb-3 mt-0"
+            >
+              <div
+                class="dt-info"
+                aria-live="polite"
+                id="DataTables_Table_0_info"
+                role="status"
+              >
+                Showing 1 to 10 of 100 entries
+              </div>
+            </div>
+            <div
+              class="d-md-flex align-items-center dt-layout-end col-md-auto ms-auto justify-content-md-between justify-content-center d-flex flex-wrap gap-2"
+            >
+              <div class="dt-paging">
+                <nav aria-label="pagination">
+                  <ul class="pagination">
+                    <li class="dt-paging-button page-item disabled">
+                      <button
+                        class="page-link previous"
+                        role="link"
+                        type="button"
+                        aria-controls="DataTables_Table_0"
+                        aria-disabled="true"
+                        aria-label="Previous"
+                        data-dt-idx="previous"
+                        tabindex="-1"
+                      >
+                        <i
+                          class="icon-base bx bx-chevron-left scaleX-n1-rtl icon-18px"
+                        ></i>
+                      </button>
+                    </li>
+                    <li class="dt-paging-button page-item active">
+                      <button
+                        class="page-link"
+                        role="link"
+                        type="button"
+                        aria-controls="DataTables_Table_0"
+                        aria-current="page"
+                        data-dt-idx="0"
+                      >
+                        1
+                      </button>
+                    </li>
+                    <li class="dt-paging-button page-item">
+                      <button
+                        class="page-link"
+                        role="link"
+                        type="button"
+                        aria-controls="DataTables_Table_0"
+                        data-dt-idx="1"
+                      >
+                        2
+                      </button>
+                    </li>
+                    <li class="dt-paging-button page-item">
+                      <button
+                        class="page-link"
+                        role="link"
+                        type="button"
+                        aria-controls="DataTables_Table_0"
+                        data-dt-idx="2"
+                      >
+                        3
+                      </button>
+                    </li>
+                    <li class="dt-paging-button page-item">
+                      <button
+                        class="page-link"
+                        role="link"
+                        type="button"
+                        aria-controls="DataTables_Table_0"
+                        data-dt-idx="3"
+                      >
+                        4
+                      </button>
+                    </li>
+                    <li class="dt-paging-button page-item">
+                      <button
+                        class="page-link"
+                        role="link"
+                        type="button"
+                        aria-controls="DataTables_Table_0"
+                        data-dt-idx="4"
+                      >
+                        5
+                      </button>
+                    </li>
+                    <li class="dt-paging-button page-item disabled">
+                      <button
+                        class="page-link ellipsis"
+                        role="link"
+                        type="button"
+                        aria-controls="DataTables_Table_0"
+                        aria-disabled="true"
+                        data-dt-idx="ellipsis"
+                        tabindex="-1"
+                      >
+                        …
+                      </button>
+                    </li>
+                    <li class="dt-paging-button page-item">
+                      <button
+                        class="page-link"
+                        role="link"
+                        type="button"
+                        aria-controls="DataTables_Table_0"
+                        data-dt-idx="9"
+                      >
+                        10
+                      </button>
+                    </li>
+                    <li class="dt-paging-button page-item">
+                      <button
+                        class="page-link next"
+                        role="link"
+                        type="button"
+                        aria-controls="DataTables_Table_0"
+                        aria-label="Next"
+                        data-dt-idx="next"
+                      >
+                        <i
+                          class="icon-base bx bx-chevron-right scaleX-n1-rtl icon-18px"
+                        ></i>
+                      </button>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / Content -->
+
+  <div class="content-backdrop fade"></div>
+</div>
+<!-- Content wrapper -->

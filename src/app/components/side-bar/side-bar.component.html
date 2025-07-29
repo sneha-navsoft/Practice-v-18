@@ -26,8 +26,8 @@ class="layout-menu menu-vertical menu bg-menu-theme"
 
 <ul class="menu-inner py-1">
   <!-- Dashboards -->
-  <li class="menu-item active open">
-    <a href="index.html" class="menu-link">
+  <li class="menu-item">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"  class="menu-link">
       <i class="menu-icon tf-icons bx bx-home-smile"></i>
       <div class="text-truncate" data-i18n="Dashboards">
         Dashboards
@@ -35,7 +35,7 @@ class="layout-menu menu-vertical menu bg-menu-theme"
     </a>
   </li>
   <li class="menu-item">
-    <a href="product-list.html" class="menu-link">
+    <a routerLink="/product-list" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="menu-link">
       <i class="menu-icon tf-icons bx bx-box"></i>
       <div class="text-truncate" data-i18n="eCommerce">
         Product List
@@ -43,7 +43,7 @@ class="layout-menu menu-vertical menu bg-menu-theme"
     </a>
   </li>
   <li class="menu-item">
-    <a href="add-product.html" class="menu-link">
+    <a routerLink="/add-product" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="menu-link">
       <i class="menu-icon tf-icons bx bx-detail"></i>
       <div class="text-truncate" data-i18n="eCommerce">
         Add Product
