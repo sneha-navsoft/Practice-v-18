@@ -21,4 +21,14 @@ export const routes: Routes = [
       import('./add-product/add-product.component').then((m) => m.AddProductComponent),
     pathMatch:'full'
   },
+  {
+    path:'pipe',
+    loadComponent:()=>
+      import('./pipe/pipe.component').then((m)=>m.PipeComponent)
+  },
+    {
+    path:'template-form',
+    loadComponent:()=>
+      import('./template/template/template.component').then((m)=>m.TemplateComponent)
+  }
 ]
