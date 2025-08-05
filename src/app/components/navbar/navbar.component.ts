@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DirectorService } from 'src/app/services/director.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,5 +10,11 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+constructor(private directorservice:DirectorService){
 
+}
+onSelectRole(role:any){
+this.directorservice.onRoleChange$.next(role);
+console.log(role)
+}
 }

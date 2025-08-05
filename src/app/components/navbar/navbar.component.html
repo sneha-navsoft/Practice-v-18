@@ -30,7 +30,11 @@ id="layout-navbar"
 </div>
 </div>
 <!-- /Search -->
-
+<select #selectval (input)="onSelectRole(selectval.value)">
+  <option value="">Select Role</option>
+  <option value="User Role">User Role</option>
+  <option value="Guest Role">Guest Role</option>
+</select>
   <ul class="navbar-nav flex-row align-items-center ms-md-auto">
     <!-- Language -->
     <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
