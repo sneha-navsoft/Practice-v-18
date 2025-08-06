@@ -36,7 +36,7 @@ export class PipeComponent implements OnInit {
     this.directorservice.getData().subscribe({
       next: (res: any) => {
 
-        this.resourceData.push(res) ;
+        this.resourceData = res;
         console.log('API Response:', this.resourceData);
       },
       error: (error) => {

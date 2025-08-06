@@ -14,7 +14,7 @@
 <ul>
   @for( item of resourceData;track item.id){
       <li>
-        {{item.id}},{{item.name}}
+        {{item.id}},{{item.name}},{{item.data?.color}}
       </li>
   }
 
