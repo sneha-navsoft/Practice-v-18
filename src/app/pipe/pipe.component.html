@@ -11,3 +11,11 @@
 }@else if(showRole=='Guest Role'){
 <div class="">Guest Role(20)</div>
 }
+<ul>
+  @for( item of resourceData;track item.id){
+      <li>
+        {{item.id}},{{item.name}}
+      </li>
+  }
+
+</ul>
