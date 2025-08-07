@@ -12,10 +12,9 @@
 <div class="">Guest Role(20)</div>
 }
 <ul>
-  @for( item of resourceData;track item.id){
+  @for( item of resourceData;track $index){
       <li>
         {{item.id}},{{item.name}},{{item.data?.color}}
       </li>
   }
-
 </ul>
