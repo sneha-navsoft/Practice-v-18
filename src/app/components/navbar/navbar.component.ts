@@ -1,6 +1,7 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DirectorService } from 'src/app/services/director.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -16,5 +17,10 @@ constructor(private directorservice:DirectorService){
 onSelectRole(role:any){
 this.directorservice.onRoleChange$.next(role);
 console.log(role)
+}
+router=inject(Router);
+onLogout(){
+  localStorage.removeItem("loginUser");
+  this.router.navigateByUrl('login')
 }
 }

@@ -7,12 +7,16 @@ import { Observable, Subject } from 'rxjs';
 })
 export class DirectorService {
   onRoleChange$ : Subject<string> = new Subject<string>
-  url="https://api.restful-api.dev/objects"
+  url="https://api.restful-api.dev/objects";
+  loginUrl="https://api.escuelajs.co/api/v1/auth/login";
   constructor(private http : HttpClient) { 
  
   }
   getData():Observable<any>{
     return this.http.get(this.url)
+  }
+  postLoginData(loginData:any):Observable<any>{
+    return this.http.post(this.loginUrl,loginData)
   }
 }
 
